@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>GitHub Finder</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<h1>Search GitHub Users</h1>
+				<p>Enter a username to fetch a user profile and repos</p>
+				<div class="search-box">
+					<input type="text" id="usernameInput" placeholder="Enter GitHub username" />
+				</div>
+			</div>
+		</header>
+		
+		<main class="container">
+			<div id="spinner" class="spinner hidden"></div>
+			<div id="profile"></div>
+			<div id="grass-container"><img id="grass" /></div>
+			<div id="repos"></div>
+		</main>
+
+		<footer class="footer">GitHub Finder ©</footer>
+
+		<script src="./js/app.js"></script>
+
+	</body>
+
+</html>

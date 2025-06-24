@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f8;
+}
+
+.header {
+  background: white;
+  border-bottom: 1px solid #e1e4e8;
+  padding: 40px 0 20px;
+  text-align: center;
+}
+
+.header h1 {
+  color: #0366d6;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #586069;
+  margin: 0 0 20px;
+  font-size: 15px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.profile-card {
+  display: flex;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  margin: 30px 0;
+  align-items: flex-start;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.profile-left {
+  width: 180px;
+  text-align: center;
+}
+
+.profile-left img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.profile-left a button {
+  margin-top: 15px;
+  padding: 10px 0;
+  width: 100%;
+  background: #2b6cb0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.profile-right {
+  flex: 1;
+}
+
+.badges {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.badge-blue { background: #0366d6; }
+.badge-green { background: #28a745; }
+.badge-gray { background: #586069; }
+
+.meta-info {
+  border: 1px solid #e1e4e8;
+  background: #fff;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 14px;
+}
+
+.meta-info p {
+  margin: 6px 0;
+}
+
+#grass-container {
+  width: 100%;
+  overflow-x: auto;  /* 가로 스크롤 대응 */
+  margin-top: 20px;
+  text-align: center;
+}
+
+#grass {
+  width: 100%;        /* 화면에 맞게 늘어남 */
+  max-width: 1000px;  /* 너무 커지면 제한 */
+  height: auto;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #24292e;
+}
+
+.repo {
+  background: white;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.repo .stats {
+  margin-top: 6px;
+}
+
+.stats .badge {
+  margin-right: 6px;
+}
+
+.spinner {
+  margin: 20px auto;
+  border: 4px solid #eee;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: #8b949e;
+  padding: 40px 0 20px;
+}
+
+.meta-info {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.meta-info td {
+  padding: 6px 12px;
+  border: 1px solid #e1e4e8;
+}
